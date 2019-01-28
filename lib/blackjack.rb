@@ -41,13 +41,6 @@ def hit?(card_total)
       invalid_command
       prompt_user
     end
-  until card_total > 21
-    prompt_user
-    choice = get_user_input
-    if choice == 'h'
-      card_total += deal_card
-    end
-  end
 end
 
 
